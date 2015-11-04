@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@font-face {
+  font-family: AllerDisplay;
+  /* ╨У╨░╤А╨╜╨╕╤В╤Г╤А╨░ ╤И╤А╨╕╤Д╤В╨░ */
+  src: url(/template/fonts/aller/AllerDisplay.ttf);
+  /* ╨Я╤Г╤В╤М ╨║ ╤Д╨░╨╣╨╗╤Г ╤Б╨╛ ╤И╤А╨╕╤Д╤В╨╛╨╝ */
+  font-family: Aller_Lt;
+  src: url(/template/fonts/aller/Aller_Lt.ttf); }
+body {
+  margin: 0;
+  padding: 0; }
+  body .wraper {
+    width: 80%;
+    margin: auto;
+    padding: 0 10px; }
+  body a {
+    text-decoration: none;
+    color: #c7c7c7; }
+  body .page {
+    background: #e4ffe2;
+    margin: auto; }
+    body .page a {
+      text-decoration: none; }
+    body .page header {
+      background: #242424; }
+      body .page header h1 {
+        float: left;
+        padding: 0;
+        font-family: 'Aller_Lt', 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 31px;
+        margin: 7px 0; }
+        body .page header h1 a {
+          color: #57c5a0;
+          margin: 0;
+          padding: 0; }
+      body .page header .login {
+        float: right;
+        font-family: 'Aller_Lt', Arial,sans-serif;
+        font-size: 11px;
+        text-align: center;
+        color: #7e7e7e;
+        border-left: 1px solid #383838;
+        border-right: 1px solid #383838; }
+        body .page header .login div {
+          padding: 0 23px; }
+          body .page header .login div a {
+            display: inline-block;
+            color: #7e7e7e;
+            margin: 17px 0; }
+      body .page header .search {
+        float: right;
+        margin-right: 20px;
+        height: 100%;
+        min-height: 100%; }
+        body .page header .search i {
+          font-size: 15px;
+          margin: 17px auto;
+          color: #7e7e7e; }
+        body .page header .search a:focus {
+          text-decoration: none;
+          border: none;
+          outline: none; }
+      body .page header .search-field {
+        float: right;
+        margin-right: 10px; }
+        body .page header .search-field form {
+          margin: 0;
+          padding: 0; }
+          body .page header .search-field form ::-webkit-input-placeholder {
+            font-family: 'Aller_Lt', Arial,sans-serif;
+            text-align: right; }
+          body .page header .search-field form :-moz-placeholder {
+            /* Firefox 18- */
+            font-family: 'Aller_Lt', Arial,sans-serif;
+            text-align: right; }
+          body .page header .search-field form ::-moz-placeholder {
+            /* Firefox 19+ */
+            font-family: 'Aller_Lt', Arial,sans-serif;
+            text-align: right; }
+          body .page header .search-field form :-ms-input-placeholder {
+            font-family: 'Aller_Lt', Arial,sans-serif;
+            text-align: right; }
+          body .page header .search-field form input {
+            width: 200px;
+            height: 23px;
+            margin: 13px auto;
+            padding: 0 15px;
+            border-radius: 15px;
+            border: none;
+            font-family: 'Aller_Lt', Arial,sans-serif; }
+          body .page header .search-field form input[type=submit] {
+            display: none; }
+    body .page header::after {
+      /*clear-fix*/
+      content: '';
+      display: block;
+      clear: both;
+      height: 0; }
+    body .page nav {
+      background: #FFFFFF; }
+      body .page nav .menu-leftside {
+        float: left; }
+        body .page nav .menu-leftside table {
+          margin: 0;
+          border-collapse: collapse;
+          text-align: center;
+          font-family: 'Aller_Lt', 'Roboto', sans-serif;
+          font-weight: 400;
+          font-size: 1.2em; }
+          body .page nav .menu-leftside table tr td {
+            cursor: pointer;
+            padding: 20px;
+            border-left: 1px solid #EEEEEE;
+            border-right: 1px solid #EEEEEE; }
+            body .page nav .menu-leftside table tr td a {
+              color: #242424; }
+            body .page nav .menu-leftside table tr td a:hover {
+              text-decoration: none;
+              color: red; }
+            body .page nav .menu-leftside table tr td a:focus {
+              text-decoration: none;
+              border: none;
+              outline: none;
+              color: #242424; }
+          body .page nav .menu-leftside table tr td:hover {
+            text-decoration: none; }
+            body .page nav .menu-leftside table tr td:hover a {
+              color: red; }
+      body .page nav .menu-rightside {
+        float: right;
+        width: 20%; }
+        body .page nav .menu-rightside table {
+          margin: 0;
+          border-collapse: collapse;
+          text-align: center;
+          font-family: 'Aller_Lt', 'Roboto', sans-serif;
+          font-weight: 400;
+          font-size: 1.2em; }
+          body .page nav .menu-rightside table tr td {
+            padding: 20px;
+            cursor: pointer;
+            border-left: 1px solid #EEEEEE;
+            border-right: 1px solid #EEEEEE; }
+            body .page nav .menu-rightside table tr td ul {
+              margin: 0;
+              padding: 0; }
+              body .page nav .menu-rightside table tr td ul li {
+                display: inline;
+                text-decoration: none; }
+                body .page nav .menu-rightside table tr td ul li img {
+                  width: 30%;
+                  padding: 0;
+                  margin: 0; }
+              body .page nav .menu-rightside table tr td ul .count {
+                background: #ADADAD;
+                border-radius: 5px;
+                color: #FFFFFF;
+                font-size: 16px;
+                vertical-align: middle;
+                padding: 1px 3px; }
+              body .page nav .menu-rightside table tr td ul #cart {
+                background-color: #57C5A0; }
+            body .page nav .menu-rightside table tr td a {
+              color: #242424; }
+            body .page nav .menu-rightside table tr td a:hover {
+              text-decoration: none;
+              color: red; }
+            body .page nav .menu-rightside table tr td a:focus {
+              text-decoration: none;
+              border: none;
+              outline: none;
+              color: #242424; }
+    body .page nav::after {
+      /*clear-fix*/
+      content: '';
+      display: block;
+      clear: both;
+      height: 0; }
+    body .page main {
+      height: 200px;
+      background: #c9c9c9; }
+    body .page footer {
+      height: 200px;
+      background: #c1c1c1; }
+
+/*# sourceMappingURL=style.css.map */

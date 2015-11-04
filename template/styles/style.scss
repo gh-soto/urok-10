@@ -1,0 +1,270 @@
+@font-face {
+	font-family: AllerDisplay; /* Гарнитура шрифта */
+	src: url(/template/fonts/aller/AllerDisplay.ttf); /* Путь к файлу со шрифтом */
+
+	font-family: Aller_Lt; 
+	src: url(/template/fonts/aller/Aller_Lt.ttf);
+}
+
+
+
+body {
+margin: 0;
+padding: 0;
+
+.wraper {
+	width: 80%;
+	margin: auto;
+	padding: 0 10px;
+
+}
+
+a {
+	text-decoration: none;
+	color: #c7c7c7;
+}
+.page {
+	background: #e4ffe2;
+	margin: auto;
+
+	a {
+		text-decoration: none;
+	}
+
+header {
+	
+	background: #242424;
+	
+	h1 {
+		float: left;
+		padding: 0;
+		font-family: 'Aller_Lt', 'Roboto', sans-serif;
+		font-weight: 400;
+		font-size: 31px;
+		margin: 7px 0;
+		a {
+			color: #57c5a0;
+			margin: 0;
+			padding: 0;
+		}
+
+	}
+	.login {
+		float: right;
+		font-family: 'Aller_Lt', Arial,sans-serif;
+		font-size: 11px;
+		text-align: center;
+		color: #7e7e7e;
+		border-left: 1px solid #383838;
+		border-right: 1px solid #383838;
+		div {
+			padding: 0 23px;
+			a {
+				display: inline-block;
+				color: #7e7e7e;
+				margin: 17px 0;
+			}
+		}
+	}
+
+	.search {
+		float: right;
+		margin-right: 20px;
+		height: 100%;
+
+		min-height: 100%;
+
+		i {
+			font-size: 15px;			
+			margin: 17px auto;
+			color: #7e7e7e;
+
+		}
+		a:focus {
+			text-decoration: none;
+			border:none;
+			outline: none;						
+
+		}		
+	}
+
+	.search-field {
+		float: right;
+		margin-right: 10px;
+		
+		form {
+			margin:0;
+			padding: 0;
+						::-webkit-input-placeholder {
+						  font-family:'Aller_Lt', Arial,sans-serif;
+						  text-align: right;
+						}
+						:-moz-placeholder { /* Firefox 18- */
+						  font-family:'Aller_Lt', Arial,sans-serif;
+						  text-align: right;						  
+						}
+						::-moz-placeholder {  /* Firefox 19+ */
+						  font-family:'Aller_Lt', Arial,sans-serif;
+						  text-align: right;
+
+						}
+						:-ms-input-placeholder {  
+						  font-family:'Aller_Lt', Arial,sans-serif;
+						  text-align: right;
+						}
+			input {
+				width: 200px;
+				height: 23px;
+				margin: 13px auto;
+				padding: 0 15px;			
+				border-radius: 15px;
+				border: none;
+				font-family: 'Aller_Lt', Arial,sans-serif;
+			}
+			input[type=submit] {
+				display: none;
+			}
+
+		}
+	}
+
+}
+header::after {		/*clear-fix*/
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+
+
+nav {
+
+	background: #FFFFFF;
+
+	.menu-leftside {
+		float: left;
+		table {
+			margin: 0;
+			border-collapse: collapse;
+			text-align: center;
+			font-family: 'Aller_Lt', 'Roboto', sans-serif;
+			font-weight: 400;
+			font-size: 1.2em;
+			tr {
+				td{	
+					cursor:pointer;
+					padding: 20px;
+					border-left: 1px solid #EEEEEE;
+					border-right: 1px solid #EEEEEE;
+					
+					a {
+						color : #242424;
+					}
+					a:hover {
+						text-decoration: none;
+						color: red;
+						
+					}
+					a:focus {
+						text-decoration: none;
+						border:none;
+						outline: none;						
+						color: #242424;
+					}
+				}
+				td:hover {
+					text-decoration: none;
+					a {
+						color: red;
+					}
+					
+				}
+			}
+		}
+	}
+
+	.menu-rightside {
+		float: right;
+		width: 20%;
+		table {
+			margin: 0;
+			border-collapse: collapse;
+			text-align: center;
+			font-family: 'Aller_Lt', 'Roboto', sans-serif;
+			font-weight: 400;
+			font-size: 1.2em;
+			tr {
+				td{	
+					padding: 20px;
+					cursor:pointer;
+					border-left: 1px solid #EEEEEE;
+					border-right: 1px solid #EEEEEE;
+					ul {
+						margin: 0;
+						padding: 0;
+						li {
+							img {
+								width: 30%;
+								padding: 0;
+								margin: 0;
+							}
+							display: inline;
+							text-decoration: none;
+
+						}
+						.count {
+							background: #ADADAD;
+							border-radius: 5px;
+							color: #FFFFFF;
+							font-size: 16px;
+							vertical-align: middle;
+							padding: 1px 3px;						
+						}
+						#cart {
+							background-color: #57C5A0;
+						}
+					}
+					a{
+						color: #242424;
+					}
+					a:hover {
+						text-decoration: none;
+						color: red;
+						
+					}
+					a:focus {
+						text-decoration: none;
+						border:none;
+						outline: none;						
+						color: #242424;
+					}
+				}
+			}
+		}
+	}
+	
+
+}
+nav::after {		/*clear-fix*/
+content: '';
+display: block;
+clear: both;
+height: 0;
+}
+
+
+main {
+	height: 200px;
+	background: #c9c9c9;
+}
+
+
+footer {
+	height: 200px;
+	background: #c1c1c1;
+}
+
+
+}
+}
