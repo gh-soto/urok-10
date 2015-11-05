@@ -3,12 +3,17 @@
   font-family: AllerDisplay;
   /* ╨У╨░╤А╨╜╨╕╤В╤Г╤А╨░ ╤И╤А╨╕╤Д╤В╨░ */
   src: url(/template/fonts/aller/AllerDisplay.ttf);
-  /* ╨Я╤Г╤В╤М ╨║ ╤Д╨░╨╣╨╗╤Г ╤Б╨╛ ╤И╤А╨╕╤Д╤В╨╛╨╝ */
+  /* ╨Я╤Г╤В╤М ╨║ ╤Д╨░╨╣╨╗╤Г ╤Б╨╛ ╤И╤А╨╕╤Д╤В╨╛╨╝ */ }
+@font-face {
   font-family: Aller_Lt;
   src: url(/template/fonts/aller/Aller_Lt.ttf); }
+@font-face {
+  font-family: Aller_Bold;
+  src: url(/template/fonts/aller/Aller_Bd.ttf); }
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Aller_Lt', Arial,sans-serif; }
   body .wraper {
     width: 80%;
     margin: auto;
@@ -26,7 +31,7 @@ body {
       body .page header h1 {
         float: left;
         padding: 0;
-        font-family: 'Aller_Lt', 'Roboto', sans-serif;
+        font-family: 'Lato', 'AllerDisplay', 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 31px;
         margin: 7px 0; }
@@ -271,7 +276,7 @@ body {
           position: absolute; }
         body .page .middle-menu .slide-line .sl {
           height: 6px;
-          width: 0.1%;
+          width: 0.15%;
           background: #2E2E2E;
           margin-left: 20%; }
         body .page .middle-menu .slide-line #sl-1 {
@@ -350,6 +355,103 @@ body {
       display: block;
       clear: both;
       height: 0; }
+    body .page .new-best {
+      background: #EBE7DF; }
+      body .page .new-best .header .left {
+        float: left; }
+        body .page .new-best .header .left h6 {
+          margin: 33px 0;
+          font-size: 20px; }
+      body .page .new-best .header .right {
+        float: right;
+        border: 1px solid #BCB5A7;
+        margin: 27px 0; }
+        body .page .new-best .header .right a {
+          color: #BCB5A7;
+          margin: 0; }
+          body .page .new-best .header .right a .showall-button {
+            padding: 10px; }
+            body .page .new-best .header .right a .showall-button p {
+              margin: 0;
+              font-family: 'Aller_Bold', Arial,sans-serif;
+              font-size: 10px; }
+      body .page .new-best .header::after {
+        /*clear-fix*/
+        content: ' ';
+        display: block;
+        clear: both;
+        height: 0; }
+      body .page .new-best .block {
+        position: relative; }
+        body .page .new-best .block img {
+          width: 100%;
+          height: 100%; }
+        body .page .new-best .block .new-arrival {
+          width: 30%;
+          text-align: center;
+          background: #FFFFFF;
+          position: relative; }
+          body .page .new-best .block .new-arrival .price {
+            position: absolute;
+            text-align: center;
+            color: white;
+            background: #57C5A0;
+            display: inline-block;
+            padding: 21px 8px;
+            bottom: 0;
+            left: 3%; }
+            body .page .new-best .block .new-arrival .price p {
+              font-size: 12px;
+              margin: 0; }
+          body .page .new-best .block .new-arrival .status {
+            position: absolute;
+            text-align: center;
+            color: white;
+            background: black;
+            display: inline-block;
+            padding: 21px 8px;
+            top: 0;
+            right: 3%; }
+            body .page .new-best .block .new-arrival .status p {
+              font-size: 12px;
+              margin: 0; }
+          body .page .new-best .block .new-arrival .out-of-stock {
+            position: absolute;
+            text-align: center;
+            color: white;
+            background: #F27E4B;
+            display: inline-block;
+            padding: 15px 0px;
+            top: 0;
+            right: 3%;
+            width: 25%; }
+            body .page .new-best .block .new-arrival .out-of-stock p {
+              font-size: 12px;
+              margin: 0; }
+          body .page .new-best .block .new-arrival h6 {
+            width: 100%;
+            display: block;
+            padding: 10px 0;
+            border-top: 1px solid #BCB5A7;
+            font-size: 15px;
+            margin: 0; }
+        body .page .new-best .block #new1 {
+          float: left;
+          position: relative; }
+        body .page .new-best .block #new2 {
+          float: left;
+          position: relative;
+          left: 20%;
+          margin-left: -15%; }
+        body .page .new-best .block #new3 {
+          float: right;
+          position: relative; }
+      body .page .new-best .block::after {
+        /*clear-fix*/
+        content: ' ';
+        display: block;
+        clear: both;
+        height: 0; }
     body .page footer {
       height: 200px;
       background: #c1c1c1;

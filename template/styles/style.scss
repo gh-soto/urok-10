@@ -2,8 +2,18 @@
 	font-family: AllerDisplay; /* Гарнитура шрифта */
 	src: url(/template/fonts/aller/AllerDisplay.ttf); /* Путь к файлу со шрифтом */
 
+}
+
+@font-face {
 	font-family: Aller_Lt; 
 	src: url(/template/fonts/aller/Aller_Lt.ttf);
+
+}
+
+@font-face {
+
+	font-family: Aller_Bold; 
+	src: url(/template/fonts/aller/Aller_Bd.ttf);	
 }
 
 
@@ -11,6 +21,7 @@
 body {
 margin: 0;
 padding: 0;
+font-family: 'Aller_Lt', Arial,sans-serif;
 
 .wraper {
 	width: 80%;
@@ -38,7 +49,7 @@ header {
 	h1 {
 		float: left;
 		padding: 0;
-		font-family: 'Aller_Lt', 'Roboto', sans-serif;
+		font-family: 'Lato', 'AllerDisplay', 'Roboto', sans-serif;
 		font-weight: 400;
 		font-size: 31px;
 		margin: 7px 0;
@@ -380,7 +391,7 @@ height: 0;
 		}
 		.sl {
 			height: 6px;
-			width: 0.1%;
+			width: 0.15%;
 			background: #2E2E2E;
 			margin-left: 20%;	
 		}
@@ -495,6 +506,143 @@ height: 0;
 	display: block;
 	clear: both;
 	height: 0;
+}
+
+.new-best {
+	background: #EBE7DF;
+	.header {
+		
+		.left {
+			float: left;
+			h6 {
+				margin: 33px 0;				
+				font-size: 20px;
+			}
+		}
+		.right {
+			float: right;
+			border: 1px solid #BCB5A7;
+			margin: 27px 0;
+			
+			a {
+				color: #BCB5A7;
+				
+				margin: 0;
+				.showall-button {
+
+					padding: 10px;
+					p {
+						margin: 0;
+
+						font-family: 'Aller_Bold', Arial,sans-serif;
+						font-size: 10px;
+					}
+				}
+			}
+		}
+	}
+	.header::after {		/*clear-fix*/
+		content: ' ';
+		display: block;
+		clear: both;
+		height: 0;
+	}
+
+	.block {
+		position: relative;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+
+
+		.new-arrival {
+			width: 30%;
+			text-align: center;
+			background: #FFFFFF;
+			position: relative;
+			.price {
+				position: absolute;
+				text-align: center;
+				color: white;
+				background: #57C5A0;
+				display: inline-block;
+				padding: 21px 8px;
+				bottom: 0;
+				left: 3%;
+				p {
+					font-size: 12px;
+					margin: 0;
+				}
+			}
+
+			.status {
+				position: absolute;
+				text-align: center;
+				color: white;
+				background: black;
+				display: inline-block;
+				padding: 21px 8px;
+				top: 0;
+				right: 3%;
+
+				p {
+					font-size: 12px;
+					margin: 0;
+				}
+			}
+			.out-of-stock {
+				position: absolute;
+				text-align: center;
+				color: white;
+				background: #F27E4B;
+				display: inline-block;
+				padding: 15px 0px;
+				top: 0;
+				right: 3%;
+				width: 25%;
+				p {
+					font-size: 12px;
+					margin: 0;
+				}
+			}
+
+			h6 {
+				width: 100%;
+				display: block;
+				padding: 10px 0;
+				border-top: 1px solid #BCB5A7;
+				font-size: 15px;
+				margin: 0;
+			}
+
+
+		}
+		#new1 {
+			float: left;
+			position: relative;
+
+		}
+		#new2 {			
+			float: left;
+			position: relative;
+			left: 20%;
+			margin-left: -15%;
+		}
+
+		#new3 {
+			float: right;
+			position: relative;
+		}
+	}
+	.block::after {		/*clear-fix*/
+		content: ' ';
+		display: block;
+		clear: both;
+		height: 0;
+	}
+
+
 }
 
 
