@@ -91,9 +91,6 @@ header {
 		visibility: inherit;
 
 	}
-	.search:not(:hover){
-  		/*не розібрався як воно працює*/
-  	}
 
 	.search-field {
 		float: right;
@@ -133,6 +130,11 @@ header {
 			}
 
 		}
+	}
+	.search-field:not(.search:hover){
+		/*не розібрався як воно працює*/
+		visibility: hidden;
+		 transition: 3s;
 	}
 
 }
@@ -254,11 +256,9 @@ nav {
 			}
 		}
 	}
-	
-
 }
 nav::after {		/*clear-fix*/
-content: '';
+content: '.';
 display: block;
 clear: both;
 height: 0;
@@ -281,7 +281,9 @@ height: 0;
 
 		.item-details {
 			position: absolute;
-			left: 560px;
+			float: right;
+			right: 0;
+			width: 45%;
 			z-index: 2;
 			margin-top: 70px;
 			font-family: 'Aller_Lt', 'Roboto', sans-serif;
@@ -348,9 +350,6 @@ height: 0;
 					}
 				}
 			}
-	
-			
-
 		}
 	}
 
@@ -358,9 +357,82 @@ height: 0;
 }
 
 
+.middle-menu {
+	background: #2E2E2E;
+	padding-top: 6px;
+	text-align: center;
+	color: #979797;
+	.slide-line {
+		background: black;
+		width: 102%;
+		height: 10px;
+		z-index: 1;
+		margin: auto;
+		margin-left: -1%; 
+		padding: 2px 1%;
+		position: relative;
+
+		#slider-pointer {
+			height: 6px;
+			width: 20%;
+			background: #57C5A0;
+			position: absolute;
+		}
+		.sl {
+			height: 6px;
+			width: 0.1%;
+			background: #2E2E2E;
+			margin-left: 20%;	
+		}
+		#sl-1 {
+			float: left;
+			margin-left: 21%;
+		}
+		#sl-2 {
+			float: left;
+		}
+		#sl-3 {
+			float: left;
+		}
+		#sl-4 {
+			float: left;
+		}
+	}
+
+
+
+	ul {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		padding-top: 15px;
+		padding-bottom: 23px;
+		li {
+			width: 19.5%;
+			list-style-type: none;
+			display: inline-block;
+			
+			h4 {
+				margin: 0;
+				font-size: 14px;				
+			}
+
+			p {
+				font-size: 10px;
+				margin: 0;
+			}
+		}
+
+		li:first-child {
+			color: white;
+		}
+	}
+}
+
 footer {
 	height: 200px;
 	background: #c1c1c1;
+	z-index: 1;
 }
 
 
