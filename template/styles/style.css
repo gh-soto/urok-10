@@ -290,17 +290,66 @@ body {
         padding-top: 15px;
         padding-bottom: 23px; }
         body .page .middle-menu ul li {
-          width: 19.5%;
+          width: 19%;
           list-style-type: none;
           display: inline-block; }
           body .page .middle-menu ul li h4 {
+            width: 100%;
             margin: 0;
             font-size: 14px; }
           body .page .middle-menu ul li p {
+            width: 100%;
             font-size: 10px;
             margin: 0; }
         body .page .middle-menu ul li:first-child {
           color: white; }
+    body .page .specials {
+      background: #242424;
+      padding: 2% 0;
+      position: relative; }
+      body .page .specials a {
+        text-align: center;
+        font-family: 'Aller_Lt', Arial,sans-serif;
+        font-size: 1.2em;
+        color: #FFFFFF; }
+      body .page .specials a:hover {
+        color: #57C5A0; }
+        body .page .specials a:hover .dash-banner {
+          background: rgba(57, 57, 57, 0.9); }
+      body .page .specials .dash-banner {
+        background: rgba(57, 57, 57, 0.7);
+        position: absolute;
+        width: 79%;
+        padding: 20px 10px;
+        bottom: 50%;
+        margin: 0 10%;
+        margin-bottom: -30px; }
+        body .page .specials .dash-banner p {
+          text-align: center;
+          margin: 0; }
+      body .page .specials img {
+        width: 100%;
+        height: 100%; }
+      body .page .specials .on-sale {
+        float: left;
+        width: 30%;
+        position: relative; }
+      body .page .specials .spec-offers {
+        width: 30%;
+        float: left;
+        position: relative;
+        left: 20%;
+        margin-left: -15%; }
+      body .page .specials .must-have {
+        width: 30%;
+        float: right;
+        position: relative; }
+    body .page .specials::after {
+      /*clear-fix*/
+      content: ' ';
+      display: block;
+      clear: both;
+      height: 0; }
     body .page footer {
       height: 200px;
       background: #c1c1c1;
