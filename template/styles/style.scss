@@ -87,11 +87,18 @@ header {
 
 		}		
 	}
+	.search:hover~div {
+		visibility: inherit;
+
+	}
+	.search:not(:hover){
+  		/*не розібрався як воно працює*/
+  	}
 
 	.search-field {
 		float: right;
 		margin-right: 10px;
-		
+		visibility: hidden;
 		form {
 			margin:0;
 			padding: 0;
@@ -175,6 +182,7 @@ nav {
 				}
 				td:hover {
 					text-decoration: none;
+					background: #EEEEEE;
 					a {
 						color: red;
 					}
@@ -240,6 +248,9 @@ nav {
 						color: #242424;
 					}
 				}
+				td:hover {
+					background: #EEEEEE;
+				}
 			}
 		}
 	}
@@ -254,9 +265,96 @@ height: 0;
 }
 
 
-main {
-	height: 200px;
-	background: #c9c9c9;
+.slider-page {
+	overflow-x: hidden; 
+	background: #fff;
+	.wraper {
+		position: relative;
+		height: 461px;
+		z-index: 1;
+		.slider {
+			z-index: 1;
+			left: -200px;
+			margin: auto;
+			position: absolute;
+		}
+
+		.item-details {
+			position: absolute;
+			left: 560px;
+			z-index: 2;
+			margin-top: 70px;
+			font-family: 'Aller_Lt', 'Roboto', sans-serif;
+			li {
+				list-style-type: none;
+				margin-top: 17px;
+
+			}
+			.price {
+				text-align: center;
+				color: white;
+				background: #57C5A0;
+				display: inline-block;
+				padding: 25px 10px;
+				p {
+					margin: 0;
+				}
+			}
+			.item-description {
+				h3 {
+					margin: 0;
+					font-size: 30px;
+
+				}
+				p {
+					margin-top: 10px;
+					font-size: 14px;
+				}
+			}
+			.item-buttons {
+		
+				ul {
+					margin: 0;
+					padding: 0;
+					-moz-user-select: none;
+					-khtml-user-select: none;
+					-webkit-user-select: none;  
+
+					li {
+						background: white;
+						display: inline-block;
+						margin: auto;
+						margin-right: 10px;
+						vertical-align: middle;
+						width: 36px;
+						height: 36px;
+					
+						padding: 7px 10px;
+						img {
+							display: inline-block;
+							margin: auto;
+							padding: 0;
+							margin: 0;
+							height: 12px;
+						
+
+						}
+						display: inline;
+						text-decoration: none;
+
+					}
+					li:hover {
+						background: #F8D6B0;
+					}
+				}
+			}
+	
+			
+
+		}
+	}
+
+	background: #EAE9E5;
 }
 
 
